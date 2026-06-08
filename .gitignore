@@ -1,0 +1,6 @@
+.venv312/
+.venv/
+venv312/
+__pycache__/
+*.pth
+*.pyc
