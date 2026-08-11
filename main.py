@@ -28,6 +28,7 @@ class ChrckYelp(nn.Module):
     _, (hid, _) = self.lstm(text)
     return self.lin(hid[-1])
 
+
 vocab = torch.load('yelp_vocab.pth', weights_only=False)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = ChrckYelp(len(vocab))
